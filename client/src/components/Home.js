@@ -1,10 +1,9 @@
-import logo from './static/logo.svg';
-import './static/App.css';
+import logo from '../static/logo.svg';
+import '../static/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+function Home(){
+    return(
+        <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +16,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
+      </div>
+    )
 }
-
-export default App;
+export default Home;
