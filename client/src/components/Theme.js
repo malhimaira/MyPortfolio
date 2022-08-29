@@ -6,11 +6,11 @@ const theme = createTheme(
             mode: 'light',
             primary: {
                 main: '#D3D3D3FF',
-                contrastText: '#ffffff',
+                contrastText: '#ffffff'
             },
             secondary: {
                 main: '#a84417',
-                contrastText: '#f08080',
+                contrastText: '#F08080',
             },
             background: {
                 default: '#f7f9fc',
@@ -19,10 +19,9 @@ const theme = createTheme(
             error: {
                 main: '#ff1000',
             },
-            
         },
         typography: {
-             fontFamily: 'Didot',
+            fontFamily: 'Didot',
             h1: {
                 letterSpacing: '0em',
                 lineHeight: 1.2,
@@ -34,15 +33,13 @@ const theme = createTheme(
                 letterSpacing: '0em',
             },
             button: {
-                fontSize: '1rem',
+                fontSize: '1rem'
             },
             body1: {
                 fontWeight: 500,
                 fontSize: '1rem',
             },
         },
-
     }
 );
-
 export default theme;
