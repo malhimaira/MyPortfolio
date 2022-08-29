@@ -1,22 +1,10 @@
-import logo from '../static/logo.svg';
-import {Typography} from '@mui/material';
+import { Paper, Typography } from '@mui/material';
 
-function Home(){
-    return(
-        <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" height={75}/>
-        <Typography variant="h1">
-          Edit <code>src/App.js</code> and save to reload.
-        </Typography>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </div>
-    )
+function Home() {
+  return (
+    <Paper>
+      {/* <Typography>me</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography> */}
+    </Paper>
+  )
 }
 export default Home;
