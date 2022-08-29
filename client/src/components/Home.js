@@ -1,13 +1,13 @@
 import logo from '../static/logo.svg';
-import '../static/App.css';
+import {Typography} from '@mui/material';
 
 function Home(){
     return(
         <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" height={75}/>
-        <p>
+        <Typography variant="h1">
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </Typography>
         <a
           className="App-link"
           href="https://reactjs.org"
