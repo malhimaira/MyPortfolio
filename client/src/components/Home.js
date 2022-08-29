@@ -4,7 +4,7 @@ import '../static/App.css';
 function Home(){
     return(
         <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" height={75}/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
