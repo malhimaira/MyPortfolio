@@ -1,14 +1,15 @@
 import { Paper, Typography, Grid, Box } from '@mui/material';
-import NavBar from './NavBar.js'
+import NavBar from '../components/NavBar.js'
 
-function Pencil() {
+function Paint() {
   return (
     <div>
       <Box sx={{ flexGrow: 1, padding: 1 }}>
         <Grid container spacing={2} direction="row">
           <Grid item xs={12} sm={6} md={5} >
+            <NavBar/>
             <Paper elevation={0}>
-             <Typography>PENCIL</Typography>
+             <Typography>PAINT</Typography>
             </Paper>
             <Paper elevation={0}>
               <Typography>AAAA</Typography>  <Typography>allo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
@@ -18,7 +19,6 @@ function Pencil() {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6} md={7}>
-            <NavBar/>
             <Paper elevation={0}>
               <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
             </Paper>
@@ -34,4 +34,4 @@ function Pencil() {
     </div>
   )
 }
-export default Pencil;
+export default Paint;

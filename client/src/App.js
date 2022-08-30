@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home.js';
-import Paint from './components/Paint.js';
-import Pencil from './components/Pencil.js';
-import About from './components/About.js';
-import Contact from './components/Contact.js';
+import Home from './pages/Home.js';
+import Paint from './pages/Paint.js';
+import Pencil from './pages/Pencil.js';
+import About from './pages/About.js';
+import Contact from './pages/Contact.js';
 
 function App() {
   return (

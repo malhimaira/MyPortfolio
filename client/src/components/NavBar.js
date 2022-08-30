@@ -10,7 +10,7 @@ function NavBar() {
                     <Grid container spacing={0} direction="row">
                         {pages.map((val, key) => {
                             return (
-                                <Grid item xs={8} sm={6} md={2} >
+                                <Grid item xs={8} sm={6} md={4} >
                                     <Button href={val} key={key}  color="inherit">{val}</Button>
                                 </Grid>
                             )
