@@ -1,11 +1,11 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, experimental_sx as sx } from '@mui/material/styles';
 
 const theme = createTheme(
     {
         palette: {
             mode: 'light',
             primary: {
-                main: '#D3D3D3FF',
+                main: '#dcdcdc',
                 contrastText: '#ffffff'
             },
             secondary: {
@@ -38,6 +38,16 @@ const theme = createTheme(
             body1: {
                 fontWeight: 500,
                 fontSize: '1rem',
+            },
+        },
+        components: {
+            MuiPaper: {
+                styleOverrides: {
+                    root: sx({
+                        mb: 2, 
+                        p:2,
+                    })
+                }
             },
         },
     }

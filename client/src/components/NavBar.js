@@ -1,17 +1,21 @@
-import { AppBar, Toolbar, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Button, Box, Grid } from '@mui/material';
 
-const pages = ['HOME', 'ABOUT ME', 'PAINT', 'PENCIL', 'CONTACT'];
+const pages = ['HOME', 'ABOUT', 'PAINT', 'PENCIL', 'CONTACT'];
 
 function NavBar() {
     return (
-        <Box sx={{ flexGrow: 1, padding: 1 }}>
+        <Box>
             <AppBar elevation={0} sx={{ position: 'relative' }} >
                 <Toolbar>
-                    {pages.map((val, key) => {
-                        return (
-                            <Button key={key} color="inherit">{val}</Button>
-                        )
-                    })}
+                    <Grid container spacing={0} direction="row">
+                        {pages.map((val, key) => {
+                            return (
+                                <Grid item xs={8} sm={6} md={2} >
+                                    <Button key={key} color="inherit">{val}</Button>
+                                </Grid>
+                            )
+                        })}
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </Box>
