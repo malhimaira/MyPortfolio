@@ -1,8 +1,10 @@
-import { Typography } from '@mui/material';
+import { Typography, Paper } from '@mui/material';
 
 function Footer() {
     return (
-        <Typography sx={{ display: "flex", justifyContent: "center" }}>MAIRA MALHI 2022 ©️</Typography>
+        <Paper elevation={0}>
+            <Typography sx={{ display: "flex", justifyContent: "center" }}>MAIRA MALHI 2022 ©️</Typography>
+        </Paper>
     )
 }
 export default Footer;

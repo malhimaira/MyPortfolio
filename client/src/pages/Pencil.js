@@ -1,5 +1,6 @@
 import { Paper, Typography, Grid, Box } from '@mui/material';
 import NavBar from '../components/NavBar.js'
+import Footer from '../components/Footer.js'
 
 function Pencil() {
   return (
@@ -25,9 +26,10 @@ function Pencil() {
             <Paper elevation={0}>
               <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
             </Paper>
-            <Paper>
+            <Paper elevation={0}>
               <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
             </Paper>
+            <Footer/>
           </Grid>
         </Grid>
       </Box>
