@@ -11,7 +11,7 @@ function NavBar() {
                         {pages.map((val, key) => {
                             return (
                                 <Grid item xs={8} sm={6} md={2} >
-                                    <Button key={key} color="inherit">{val}</Button>
+                                    <Button href={val} key={key}  color="inherit">{val}</Button>
                                 </Grid>
                             )
                         })}
