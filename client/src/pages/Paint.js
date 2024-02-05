@@ -5,9 +5,14 @@ import Footer from '../components/Footer.js'
 
 function Paint() {
 
+  // handle modal
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  //list of art components
+  const leftArtwork = [{"title":"Ltest1","art":"xx"},{"title":"Ltest2","art":"xx"},{"title":"Ltest3","art":"xx"}];
+  const rightArtwork = [{"title":"Rtest1","art":"xx"},{"title":"Rtest2","art":"xx"},{"title":"Rtest3","art":"xx"}];
 
   return (
     <div>
@@ -18,36 +23,44 @@ function Paint() {
             <Paper elevation={0}>
              <Typography>PAINT</Typography>
             </Paper>
-            <Paper elevation={0} onClick={handleOpen}>
-              <Typography>AAAA</Typography>  <Typography>allo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
-            </Paper>
-            <Modal
-              open={open}
-              onClose={handleClose}
-            >
-              <Paper>
-                <Typography id="modal-modal-title" variant="h6" component="h2">
-                  Text in a modal
-                </Typography>
-                <Typography id="modal-modal-description">
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
-              </Paper>
-          </Modal>
-            <Paper elevation={0}>
-              <Typography>AAAA</Typography>  <Typography>allo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
-            </Paper>
+            {leftArtwork.map(function(art, idL){
+              return (
+              <div>
+                <Paper key={idL} elevation={0} onClick={handleOpen}>
+                  <Typography sx={{fontSize:'8rem'}}>{art.title}</Typography>  
+                  </Paper>
+                <Modal open={open} onClose={handleClose}>
+                  <Paper>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                      {art.art}
+                    </Typography>
+                    <Typography id="modal-modal-description" variant="h2" >
+                      {art.title}
+                    </Typography>
+                  </Paper>
+                </Modal>
+              </div>)
+            })}
           </Grid>
           <Grid item xs={12} sm={6} md={7}>
-            <Paper elevation={0}>
-              <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
-            </Paper>
-            <Paper elevation={0}>
-              <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
-            </Paper>
-            <Paper elevation={0}>
-              <Typography>BBB</Typography>  <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>me</Typography>   <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>  <Typography>Helo</Typography>
-            </Paper>
+            {rightArtwork.map(function(art, idR){
+                return (
+                <div>
+                  <Paper key={idR} elevation={0} onClick={handleOpen}>
+                    <Typography sx={{fontSize:'8rem'}}>{art.title}</Typography>  
+                    </Paper>
+                  <Modal open={open} onClose={handleClose}>
+                    <Paper>
+                      <Typography id="modal-modal-title" variant="h6" component="h2">
+                        {art.art}
+                      </Typography>
+                      <Typography id="modal-modal-description" variant="h2" >
+                        {art.title}
+                      </Typography>
+                    </Paper>
+                  </Modal>
+                </div>)
+              })}
             <Footer/>
           </Grid>
         </Grid>
