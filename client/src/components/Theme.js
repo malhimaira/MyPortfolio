@@ -1,3 +1,4 @@
+import { blueGrey, red } from '@mui/material/colors';
 import { createTheme, experimental_sx as sx } from '@mui/material/styles';
 
 const theme = createTheme(
@@ -46,9 +47,19 @@ const theme = createTheme(
                     root: sx({
                         mb: 2, 
                         p:2,
+                        outline: 'none',
+                        borderRadius: '2px'
                     })
                 }
             },
+            MuiModal:{
+                styleOverrides: {
+                    root: sx({
+                        p: 20,
+                        border: 'none'
+                    })
+                }
+            }
         },
     }
 );
