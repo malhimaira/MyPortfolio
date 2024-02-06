@@ -46,11 +46,10 @@ function Paint() {
                 </Typography>
               </Paper>
             </Modal>
-            {leftArtwork.map(art => {
+            {leftArtwork.map((art) => {
               return (
                 <div key={art.title}>
                   <Paper
-                    key={art.title}
                     elevation={0}
                     onClick={() => {
                       handleOpen();
@@ -58,7 +57,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography key={art.title} sx={{ fontSize: "4rem" }}>
+                    <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
@@ -67,11 +66,10 @@ function Paint() {
             })}
           </Grid>
           <Grid item xs={12} sm={6} md={7}>
-            {rightArtwork.map(art => {
+            {rightArtwork.map((art) => {
               return (
                 <div key={art.title}>
                   <Paper
-                    key={art.title}
                     elevation={0}
                     onClick={() => {
                       handleOpen();
@@ -79,7 +77,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography key={art.title} sx={{ fontSize: "4rem" }}>
+                    <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
