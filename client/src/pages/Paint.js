@@ -57,7 +57,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography sx={{ fontSize: "8rem" }}>
+                    <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
@@ -78,7 +78,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography sx={{ fontSize: "8rem" }}>
+                    <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
