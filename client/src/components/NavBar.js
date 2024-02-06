@@ -8,10 +8,10 @@ function NavBar() {
             <AppBar elevation={0} sx={{ position: 'relative' }} >
                 <Toolbar>
                     <Grid container spacing={0} direction="row">
-                        {pages.map((val, key) => {
+                        {pages.map(val => {
                             return (
-                                <Grid item xs={8} sm={6} md={4} >
-                                    <Button href={val} key={key}  color="inherit">{val}</Button>
+                                <Grid item xs={8} sm={6} md={4} key={val} >
+                                    <Button href={val} key={val}  color="inherit">{val}</Button>
                                 </Grid>
                             )
                         })}
