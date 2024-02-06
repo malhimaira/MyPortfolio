@@ -32,6 +32,7 @@ const theme = createTheme(
             },
             h2: {
                 letterSpacing: '0em',
+                fontSize: '2em'
             },
             button: {
                 fontSize: '1rem'
@@ -55,7 +56,7 @@ const theme = createTheme(
             MuiModal:{
                 styleOverrides: {
                     root: sx({
-                        p: 20,
+                        p: 5,
                         border: 'none'
                     })
                 }
