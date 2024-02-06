@@ -5,8 +5,8 @@ import Footer from "../components/Footer.js";
 
 function Paint() {
   // handle modal
-  const [modalTitle, setModalTitle] = React.useState(null);
-  const [modalContent, setModalContent] = React.useState(null);
+  const [modalTitle, setModalTitle] = useState(null);
+  const [modalContent, setModalContent] = useState(null);
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -46,10 +46,11 @@ function Paint() {
                 </Typography>
               </Paper>
             </Modal>
-            {leftArtwork.map(function (art, idL) {
+            {leftArtwork.map(art => {
               return (
-                <div key={idL}>
+                <div key={art.title}>
                   <Paper
+                    key={art.title}
                     elevation={0}
                     onClick={() => {
                       handleOpen();
@@ -57,7 +58,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography sx={{ fontSize: "4rem" }}>
+                    <Typography key={art.title} sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
@@ -66,11 +67,11 @@ function Paint() {
             })}
           </Grid>
           <Grid item xs={12} sm={6} md={7}>
-            {rightArtwork.map(function (art, idR) {
+            {rightArtwork.map(art => {
               return (
-                <div>
+                <div key={art.title}>
                   <Paper
-                    key={idR}
+                    key={art.title}
                     elevation={0}
                     onClick={() => {
                       handleOpen();
@@ -78,7 +79,7 @@ function Paint() {
                       handleModalTitle(art.title);
                     }}
                   >
-                    <Typography sx={{ fontSize: "4rem" }}>
+                    <Typography key={art.title} sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
                   </Paper>
