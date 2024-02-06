@@ -37,7 +37,7 @@ function Paint() {
               <Typography>PAINT</Typography>
             </Paper>
             <Modal open={open} onClose={handleClose}>
-              <Paper>
+              <Paper elevation={0}>
                 <Typography id="modal-modal-title" variant="h6" component="h2">
                   {modalContent}
                 </Typography>
