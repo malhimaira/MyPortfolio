@@ -57,6 +57,7 @@ function Paint() {
                       handleModalContent(art.art);
                       handleModalTitle(art.title);
                     }}
+                    sx={{backgroundImage:art.art}}
                   >
                     <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
