@@ -23,11 +23,14 @@ function Paint() {
     { title: "BLOOM", art: "/paint/bloom.jpg" },
     { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
     { title: "MOONSTONE", art: "/paint/moonstone.jpg" },
+    { title: "ANGLES", art: "/paint/Angles.JPG" },
   ];
   let rightArtwork = [
     { title: "LOSE SIGHT OF YOUR SHORE", art: "/paint/myboatfull.JPG" },
     { title: "SERENITY", art: "/paint/serenity.jpg"},
     { title: "ESCAPES", art: "/paint/Escapes.jpg" },
+    { title: "SUBLIME", art: "/paint/Sublime.JPG" },
+    { title: "TAJ", art: "/paint/taj.JPG" },
   ];
 
   return (
