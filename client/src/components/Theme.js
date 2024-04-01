@@ -56,13 +56,13 @@ const theme = createTheme(
             MuiModal:{
                 styleOverrides: {
                     root: sx({
-                        p: "15%",
+                        p: "25%",
                         border: 'none',
-                        width: '75%',
-                        height: '50%',
+                        width: '50%',
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        // overflow: 'auto'
                     })
                 }
             }
