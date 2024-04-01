@@ -5,23 +5,23 @@ import Footer from "../components/Footer.js";
 
 function Paint() {
   // handle modal
-  const [modalTitle, setModalTitle] = useState(null);
-  const [modalContent, setModalContent] = useState(null);
-  const [open, setOpen] = React.useState(false);
+  let [modalTitle, setModalTitle] = useState(null);
+  let [modalContent, setModalContent] = useState(null);
+  let [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  let handleOpen = () => setOpen(true);
+  let handleClose = () => setOpen(false);
 
-  const handleModalContent = (x) => setModalContent(x);
-  const handleModalTitle = (x) => setModalTitle(x);
+  let handleModalContent = (x) => setModalContent(x);
+  let handleModalTitle = (x) => setModalTitle(x);
 
   //list of art components
-  const leftArtwork = [
-    { title: "Ltest1", art: "x1" },
+  let leftArtwork = [
+    { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
     { title: "Ltest2", art: "x2" },
     { title: "Ltest3", art: "x3" },
   ];
-  const rightArtwork = [
+  let rightArtwork = [
     { title: "Rtest1", art: "x4" },
     { title: "Rtest2", art: "x5" },
     { title: "Rtest3", art: "x6" },
@@ -38,9 +38,10 @@ function Paint() {
             </Paper>
             <Modal open={open} onClose={handleClose}>
               <Paper elevation={0}>
-                <Typography id="modal-modal-title" variant="h6" component="h2">
+                {/* <Typography id="modal-modal-title" variant="h6" component="h2">
                   {modalContent}
-                </Typography>
+                </Typography> */}
+                <img width={'100%'} id="modal-modal-title" src={modalContent} alt={modalTitle}/>
                 <Typography id="modal-modal-description" variant="h2">
                   {modalTitle}
                 </Typography>
