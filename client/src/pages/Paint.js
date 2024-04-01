@@ -18,13 +18,16 @@ function Paint() {
   //list of art components
   let leftArtwork = [
     { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
-    { title: "Ltest2", art: "x2" },
-    { title: "Ltest3", art: "x3" },
+    { title: "PATHS", art: "/paint/paths.jpeg" },
+    { title: "SAIL", art: "/paint/Sail.JPG" },
+    { title: "BLOOM", art: "/paint/bloom.jpg" },
+    { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
+    { title: "MOONSTONE", art: "/paint/moonstone.jpg" },
   ];
   let rightArtwork = [
-    { title: "Rtest1", art: "x4" },
-    { title: "Rtest2", art: "x5" },
-    { title: "Rtest3", art: "x6" },
+    { title: "LOSE SIGHT OF YOUR SHORE", art: "/paint/myboatfull.JPG" },
+    { title: "SERENITY", art: "/paint/serenity.jpg"},
+    { title: "ESCAPES", art: "/paint/Escapes.jpg" },
   ];
 
   return (
