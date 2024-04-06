@@ -58,7 +58,10 @@ const theme = createTheme(
                     root: sx({
                         p: "12.5%",
                         border: 'none',
-                        width: '75%',
+                        minWidth: '80%', 
+                        maxWidth: '80%',
+                        minHeight: '80%',
+                        maxHeight: '80%',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',

@@ -22,15 +22,18 @@ function Paint() {
     { title: "SAIL", art: "/paint/Sail.JPG" },
     { title: "BLOOM", art: "/paint/bloom.jpg" },
     { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
-    { title: "MOONSTONE", art: "/paint/moonstone.jpg" },
+    { title: "MOON STONE", art: "/paint/moonstone.jpg" },
     { title: "ANGLES", art: "/paint/Angles.JPG" },
   ];
   let rightArtwork = [
-    { title: "LOSE SIGHT OF YOUR SHORE", art: "/paint/myboatfull.JPG" },
+    { title: "SHORE SIGHTS", art: "/paint/myboatfull.JPG" },
     { title: "SERENITY", art: "/paint/serenity.jpg"},
     { title: "ESCAPES", art: "/paint/Escapes.jpg" },
+    { title: "MELTING", art: "/paint/Melting.jpg" },
     { title: "SUBLIME", art: "/paint/Sublime.JPG" },
+    { title: "CLEARING", art: "/paint/clearing.jpg" },
     { title: "TAJ", art: "/paint/taj.JPG" },
+    { title: "FLORAL", art: "/paint/floral.jpeg" }
   ];
 
   return (
@@ -44,10 +47,7 @@ function Paint() {
             </Paper>
             <Modal open={open} onClose={handleClose}>
               <Paper elevation={0}>
-                {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-                  {modalContent}
-                </Typography> */}
-                <img width={'100%'} id="modal-modal-title" src={modalContent} alt={modalTitle}/>
+                <img width='100%' id="modal-modal-title" src={modalContent} alt={modalTitle}/>
                 <Typography id="modal-modal-description" variant="h2">
                   {modalTitle}
                 </Typography>
