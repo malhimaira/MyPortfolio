@@ -24,11 +24,7 @@ function Paint() {
     width: '100%',
     height: '100%',
   }
-  const tileImage = {
-    position:'relative', 
-    p:'0', 
-    overflow:'hidden'
-  }
+  
   //list of art components
   let leftArtwork = [
     { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
@@ -37,13 +33,13 @@ function Paint() {
     { title: "FLORAL", art: "/paint/floral.jpeg" },
     { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
     { title: "MOON STONE", art: "/paint/moonstone.jpg" },
-    { title: "TAJ", art: "/paint/taj.JPG" },
+    { title: "ESCAPES", art: "/paint/Escapes.jpg" },
     { title: "BLOOM", art: "/paint/bloom.jpg" },
   ];
   let rightArtwork = [
     { title: "SHORE SIGHTS", art: "/paint/myboatfull.JPG" },
     { title: "SERENITY", art: "/paint/serenity.jpg"},
-    { title: "ESCAPES", art: "/paint/Escapes.jpg" },
+    { title: "TAJ", art: "/paint/taj.JPG" },
     { title: "MELTING", art: "/paint/Melting.jpg" },
     { title: "SUBLIME", art: "/paint/Sublime.JPG" },
     { title: "CLEARING", art: "/paint/clearing.jpg" },
@@ -54,10 +50,10 @@ function Paint() {
     <div>
       <Box sx={{ flexGrow: 1, padding: 1 }}>
         <Grid container spacing={2} direction="row">
-          <Grid item xs={12} sm={6} md={5}>
+          <Grid item xs={12} sm={5} md={5}>
             <NavBar />
             <Paper elevation={0}>
-              <Typography>PAINT</Typography>
+              <Typography variant="h2">PAINT</Typography>
             </Paper>
             <Modal open={open} onClose={handleClose}>
               <Paper elevation={0}>
@@ -80,7 +76,7 @@ function Paint() {
               );
             })}
           </Grid>
-          <Grid item xs={12} sm={6} md={7}>
+          <Grid item xs={12} sm={7} md={7}>
             {rightArtwork.map((art) => {
               return (
                 <div key={art.title}>
