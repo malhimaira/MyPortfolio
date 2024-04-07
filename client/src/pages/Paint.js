@@ -24,10 +24,10 @@ function Paint() {
     width: '100%',
     height: '100%',
   }
-  const tileBG2 = {
-    overflow: 'hidden',
-    height: '10%',
-    width:'100%',
+  const tileImage = {
+    position:'relative', 
+    p:'0', 
+    overflow:'hidden'
   }
   //list of art components
   let leftArtwork = [
@@ -72,7 +72,7 @@ function Paint() {
                 <div key={art.title} >
                   <Paper elevation={0} sx={{position:'relative', p:'0', overflow:'hidden'}} onClick={() => { handleOpen(); handleModalContent(art.art); handleModalTitle(art.title);}}>
                     <img style={tileBG} src={art.art} alt={art.title}/> 
-                    <Typography variant="h2" sx={{ position: 'absolute', bottom:'15px' }}>
+                    <Typography variant="h2" sx={{ position: 'absolute', bottom:'15px', left:'5px'}}>
                       {art.title}
                     </Typography>
                   </Paper>
@@ -83,16 +83,10 @@ function Paint() {
           <Grid item xs={12} sm={6} md={7}>
             {rightArtwork.map((art) => {
               return (
-                <div key={art.title} style={{overflow: 'hidden',}}>
-                  <Paper
-                    elevation={0}
-                    onClick={() => {
-                      handleOpen();
-                      handleModalContent(art.art);
-                      handleModalTitle(art.title);
-                    }}
-                  >
-                    <Typography sx={{ fontSize: "4rem" }}>
+                <div key={art.title}>
+                  <Paper elevation={0} sx={{position:'relative', p:'0', overflow:'hidden'}} onClick={() => { handleOpen(); handleModalContent(art.art); handleModalTitle(art.title);}}>
+                    <img style={tileBG} src={art.art} alt={art.title}/> 
+                    <Typography variant="h2" sx={{ position: 'absolute', bottom:'15px', left:'5px' }}>
                       {art.title}
                     </Typography>
                   </Paper>
