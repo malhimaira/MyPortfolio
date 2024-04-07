@@ -32,7 +32,7 @@ const theme = createTheme(
             },
             h2: {
                 letterSpacing: '0em',
-                fontSize: '2em'
+                fontSize: '6vw'
             },
             button: {
                 fontSize: '1rem'

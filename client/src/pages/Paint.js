@@ -70,17 +70,9 @@ function Paint() {
             {leftArtwork.map((art) => {
               return (
                 <div key={art.title} >
-                  <Paper
-                    elevation={0}
-                    onClick={() => {
-                      handleOpen();
-                      handleModalContent(art.art);
-                      handleModalTitle(art.title);
-                    }}
-                    
-                  >
-                    {/* <img style={tileBG} src={art.art} alt={art.title}/>  */}
-                    <Typography sx={{ fontSize: "4rem" }}>
+                  <Paper elevation={0} sx={{position:'relative', p:'0', overflow:'hidden'}} onClick={() => { handleOpen(); handleModalContent(art.art); handleModalTitle(art.title);}}>
+                    <img style={tileBG} src={art.art} alt={art.title}/> 
+                    <Typography variant="h2" sx={{ position: 'absolute', bottom:'15px' }}>
                       {art.title}
                     </Typography>
                   </Paper>
