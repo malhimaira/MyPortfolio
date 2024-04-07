@@ -38,7 +38,6 @@ function Paint() {
     { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
     { title: "MOON STONE", art: "/paint/moonstone.jpg" },
     { title: "TAJ", art: "/paint/taj.JPG" },
-    
     { title: "BLOOM", art: "/paint/bloom.jpg" },
   ];
   let rightArtwork = [
