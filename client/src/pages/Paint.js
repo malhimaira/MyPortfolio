@@ -34,10 +34,12 @@ function Paint() {
     { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
     { title: "PATHS", art: "/paint/paths.jpeg" },
     { title: "SAIL", art: "/paint/Sail.JPG" },
-    { title: "BLOOM", art: "/paint/bloom.jpg" },
+    { title: "FLORAL", art: "/paint/floral.jpeg" },
     { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
     { title: "MOON STONE", art: "/paint/moonstone.jpg" },
-    { title: "ANGLES", art: "/paint/Angles.JPG" },
+    { title: "TAJ", art: "/paint/taj.JPG" },
+    
+    { title: "BLOOM", art: "/paint/bloom.jpg" },
   ];
   let rightArtwork = [
     { title: "SHORE SIGHTS", art: "/paint/myboatfull.JPG" },
@@ -46,8 +48,7 @@ function Paint() {
     { title: "MELTING", art: "/paint/Melting.jpg" },
     { title: "SUBLIME", art: "/paint/Sublime.JPG" },
     { title: "CLEARING", art: "/paint/clearing.jpg" },
-    { title: "TAJ", art: "/paint/taj.JPG" },
-    { title: "FLORAL", art: "/paint/floral.jpeg" }
+    { title: "ANGLES", art: "/paint/Angles.JPG" },
   ];
 
   return (
