@@ -15,6 +15,20 @@ function Paint() {
   let handleModalContent = (x) => setModalContent(x);
   let handleModalTitle = (x) => setModalTitle(x);
 
+  const tileBG = {
+    opacity: 0.5,
+    filter: "grayscale(50%)",
+    position: 'center',
+    display: 'block',
+    margin: 'auto',
+    width: '100%',
+    height: '100%',
+  }
+  const tileBG2 = {
+    overflow: 'hidden',
+    height: '10%',
+    width:'100%',
+  }
   //list of art components
   let leftArtwork = [
     { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
@@ -55,7 +69,7 @@ function Paint() {
             </Modal>
             {leftArtwork.map((art) => {
               return (
-                <div key={art.title}>
+                <div key={art.title} >
                   <Paper
                     elevation={0}
                     onClick={() => {
@@ -63,8 +77,9 @@ function Paint() {
                       handleModalContent(art.art);
                       handleModalTitle(art.title);
                     }}
-                    sx={{backgroundImage:art.art}}
+                    
                   >
+                    {/* <img style={tileBG} src={art.art} alt={art.title}/>  */}
                     <Typography sx={{ fontSize: "4rem" }}>
                       {art.title}
                     </Typography>
@@ -76,7 +91,7 @@ function Paint() {
           <Grid item xs={12} sm={6} md={7}>
             {rightArtwork.map((art) => {
               return (
-                <div key={art.title}>
+                <div key={art.title} style={{overflow: 'hidden',}}>
                   <Paper
                     elevation={0}
                     onClick={() => {
