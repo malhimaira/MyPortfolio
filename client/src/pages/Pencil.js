@@ -27,23 +27,18 @@ function Pencil() {
   
   //list of art components
   let leftArtwork = [
-    { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
-    { title: "PATHS", art: "/paint/paths.jpeg" },
-    { title: "SAIL", art: "/paint/Sail.JPG" },
-    { title: "FLORAL", art: "/paint/floral.jpeg" },
-    { title: "BY THE BAY", art: "/paint/pinkbays.jpg" },
-    { title: "MOON STONE", art: "/paint/moonstone.jpg" },
-    { title: "ESCAPES", art: "/paint/Escapes.jpg" },
-    { title: "BLOOM", art: "/paint/bloom.jpg" },
+    { title: "SELF PORTRAIT", art: "/pencil/MaiSelf.jpg"},
+    { title: "ADVERSITY", art: "/pencil/Adversity.jpg"},
+    { title: "FLYNN '21", art: "/pencil/myFlynnNew.jpg" },
+    { title: "FLYNN '15", art: "/pencil/myflynn1.jpeg" },
+    { title: "FEATHERS", art: "/pencil/myparrot.jpg" },
+    { title: "GAUNTLET", art: "/pencil/Gauntlet.jpg" },
   ];
   let rightArtwork = [
-    { title: "SHORE SIGHTS", art: "/paint/myboatfull.JPG" },
-    { title: "SERENITY", art: "/paint/serenity.jpg"},
-    { title: "TAJ", art: "/paint/taj.JPG" },
-    { title: "MELTING", art: "/paint/Melting.jpg" },
-    { title: "SUBLIME", art: "/paint/Sublime.JPG" },
-    { title: "CLEARING", art: "/paint/clearing.jpg" },
-    { title: "ANGLES", art: "/paint/Angles.JPG" },
+    { title: "TIME", art: "/pencil/time.jpg" },
+    { title: "EYE", art: "/pencil/Eye.jpg" },
+    { title: "JABBY'S TREE", art: "/pencil/Jabberwocky Tree.jpg" },
+    { title: "SHADES", art: "/pencil/myshades.JPG" },
   ];
 
   return (
