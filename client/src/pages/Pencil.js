@@ -31,6 +31,7 @@ function Pencil() {
     { title: "ADVERSITY", art: "/pencil/Adversity.jpg"},
     { title: "FLYNN '21", art: "/pencil/myFlynnNew.jpg" },
     { title: "FLYNN '15", art: "/pencil/myflynn1.jpeg" },
+    { title: "CROSSING", art: "/pencil/crossing.jpg" },
     { title: "FEATHERS", art: "/pencil/myparrot.jpg" },
     { title: "GAUNTLET", art: "/pencil/Gauntlet.jpg" },
   ];
@@ -38,6 +39,7 @@ function Pencil() {
     { title: "TIME", art: "/pencil/time.jpg" },
     { title: "EYE", art: "/pencil/Eye.jpg" },
     { title: "JABBY'S TREE", art: "/pencil/Jabberwocky Tree.jpg" },
+    { title: "CORONA", art: "/pencil/Tiara.jpg" },
     { title: "SHADES", art: "/pencil/myshades.JPG" },
   ];
 

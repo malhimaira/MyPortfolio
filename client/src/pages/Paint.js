@@ -28,6 +28,7 @@ function Paint() {
   //list of art components
   let leftArtwork = [
     { title: "DAWN IN OIL", art: "/paint/myoilmount.jpeg"},
+    { title: "HOT OR COLD", art: "/paint/hotorcold.jpeg"},
     { title: "PATHS", art: "/paint/paths.jpeg" },
     { title: "SAIL", art: "/paint/Sail.JPG" },
     { title: "FLORAL", art: "/paint/floral.jpeg" },
