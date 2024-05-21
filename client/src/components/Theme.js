@@ -1,4 +1,3 @@
-import { blueGrey, red } from '@mui/material/colors';
 import { createTheme, experimental_sx as sx } from '@mui/material/styles';
 
 const theme = createTheme(
@@ -33,6 +32,13 @@ const theme = createTheme(
             h2: {
                 letterSpacing: '0em',
                 fontSize: '6vw'
+            },
+            h3: {
+                letterSpacing: '0em',
+                lineHeight: 1.2,
+                fontSize: '80pt',
+                color: '#ffffff',
+                fontFamily: 'Didot'
             },
             button: {
                 fontSize: '1rem'
