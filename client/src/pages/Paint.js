@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Paper, Typography, Grid, Box, Modal } from "@mui/material";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
+import '../static/art.css';
 
 function Paint() {
   // handle modal
@@ -82,7 +83,7 @@ function Paint() {
               return (
                 <div key={art.title}>
                   <Paper elevation={0} sx={{position:'relative', p:'0', overflow:'hidden'}} onClick={() => { handleOpen(); handleModalContent(art.art); handleModalTitle(art.title);}}>
-                    <img style={tileBG} src={art.art} alt={art.title}/> 
+                    <img style={tileBG} class='imgTocol' src={art.art} alt={art.title}/> 
                     <Typography variant="h2" sx={{ position: 'absolute', bottom:'15px', left:'5px' }}>
                       {art.title}
                     </Typography>
